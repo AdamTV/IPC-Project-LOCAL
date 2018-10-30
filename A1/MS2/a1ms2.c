@@ -18,17 +18,18 @@ Milestone:  2
 // HINT: put the header file name in double quotes so the compiler knows
 //       to look for it in the same directory/folder as this source file
 // #include your contacts header file on the next line:
-
+#include "contacts.h"
 
 int main (void)
 {
     // Declare variables here:
-
-
+struct Name fullName = {{0}};
+struct Address fullAddress = {{0}};
+struct Numbers fullNumbers = {{0}};
 
     // Display the title
-
-
+printf("Contact Management System\n");
+printf("-------------------------\n")
 
     // Contact Name Input:
 

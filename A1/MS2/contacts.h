@@ -29,7 +29,7 @@ struct Address {
 // Structure type Numbers declaration
 // Place your code from Milestone #1 here...
 struct Numbers {
-    cell[11];
-    home[11];
-    business[11];
+    int cell[11];
+    int home[11];
+    int business[11];
 };
