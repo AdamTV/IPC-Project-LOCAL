@@ -24,17 +24,29 @@ int main (void)
 {
     // Declare variables here:
 struct Name fullName = {{0}};
-struct Address fullAddress = {0,{0},0,{0},{0}};
+struct Address fullAddress = {0,{0}};
 struct Numbers fullNumbers = {{0}};
+char y;
+char yn;
+y = 'y';
 
     // Display the title
 printf("Contact Management System\n");
 printf("-------------------------\n");
 
     // Contact Name Input:
+printf("Please enter the contact's first name: ");
+scanf("%30s", fullName.firstName);
+printf("Do you want to enter a middle initial(s)? (y or n): ");
+scanf("%1s", yn);
 
+if (yn == y) {
+	printf("Please enter the contact's middle initial(s): ");
+   	scanf("%6s", fullName.middleInitial);
+}
 
-
+printf("Please enter the contact's last name: ");
+scanf("%35s", fullName.lastName);
     // Contact Address Input:
 
 
