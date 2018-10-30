@@ -1,9 +1,9 @@
 /* -------------------------------------------
-Name:
-Student number:
-Email:
-Section:
-Date:
+Name:		 ADAM STINZIANI
+Student number:	 124521188
+Email:		 astinziani@myseneca.ca
+Section:	 IPC144SVV
+Date:	         2018-10-30
 ----------------------------------------------
 Assignment: 1
 Milestone:  2
