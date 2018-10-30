@@ -24,12 +24,12 @@ int main (void)
 {
     // Declare variables here:
 struct Name fullName = {{0}};
-struct Address fullAddress = {{0}};
+struct Address fullAddress = {0,{0},0,{0},{0}};
 struct Numbers fullNumbers = {{0}};
 
     // Display the title
 printf("Contact Management System\n");
-printf("-------------------------\n")
+printf("-------------------------\n");
 
     // Contact Name Input:
 
