@@ -102,13 +102,12 @@ printf("\nStreet name: %s", fullAddress.street);
 printf("\nApartment: %i", fullAddress.aptNum);
 printf("\nPostal code: %s", fullAddress.postalCode);
 printf("\nCity: %s\n\nPhone Numbers:", fullAddress.city);
-printf("\nCell phone number: ");
-printf("");
-printf("");
+printf("\nCell phone number: %s", fullNumbers.cell);
+printf("\nHome phone number: %s", fullNumbers.home);
+printf("\nBusiness phone number: %s", fullNumbers.business);
 
     // Display Completion Message
-
-
+printf("\n\nStructure test for Name, Address, and Numbers Done!");
 
     return 0;
 }
