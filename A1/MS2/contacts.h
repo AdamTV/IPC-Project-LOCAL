@@ -6,7 +6,7 @@ Section:	 IPC144SVV
 Date:		 2018-10-30
 ----------------------------------------------
 Assignment: 1
-Milestone:  2
+Milestone:  1
 ---------------------------------------------- */
 
 // Structure type Name declaration
@@ -19,9 +19,9 @@ struct Name {
 // Structure type Address declaration
 // Place your code from Milestone #1 here...
 struct Address {
-    int streetNum;
+    unsigned int streetNum;
     char street[41];
-    int aptNum;
+    unsigned int aptNum;
     char postalCode[8];
     char city[41];
 };
@@ -29,7 +29,7 @@ struct Address {
 // Structure type Numbers declaration
 // Place your code from Milestone #1 here...
 struct Numbers {
-    int cell[11];
-    int home[11];
-    int business[11];
+    char cell[11];
+    char home[11];
+    char business[11];
 };
