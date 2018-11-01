@@ -42,16 +42,16 @@ int main(void)
 	}
 	else {
 		printf("Please enter the contact's middle initial(s): ");
-		scanf("%6s", fullName.middleInitial);
+		scanf("%[6^\n]", fullName.middleInitial);
 	}
 	printf("Please enter the contact's last name: ");
-	scanf("%35s", fullName.lastName);
+	scanf("%[35^\n]", fullName.lastName);
 
 	// Contact Address Input:
 	printf("Please enter the contact's street number: ");
 	scanf("%d", &fullAddress.streetNum);
 	printf("Please enter the contact's street name: ");
-	scanf("%40s", fullAddress.street);
+	scanf("%[40^\n]", fullAddress.street);
 	printf("Do you want to enter an apartment number? (y or n): ");
 	scanf("%1s", &yn);
 

@@ -1,0 +1,2 @@
+1. A more efficient way to ask a user to fill the fields would be to code a function for each of the major fields (name, address, numbers) and return multiple values to the main function through the use of pointers.
+2. An extra character is required to store C strings because they have a special property known as the terminator element or null terminator. This is one null byte (ALL 0's) at the end of the string.
