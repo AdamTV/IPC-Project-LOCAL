@@ -1,8 +1,8 @@
 /* -------------------------------------------
-Name:		 ADAM STINZIANI
+Name:			 ADAM STINZIANI
 Student number:	 124521188
-Email:		 astinziani@myseneca.ca
-Section:	 IPC144SVV
+Email:			 astinziani@myseneca.ca
+Section:		 IPC144SVV
 Date:	         2018-10-30
 ----------------------------------------------
 Assignment: 1
@@ -97,7 +97,7 @@ int main(void)
 	printf("\nBusiness phone number: %s", fullNumbers.business);
 
 	// Display Completion Message
-	printf("\n\nStructure test for Name, Address, and Numbers Done!\n");
+	printf("\n\nStructure test for Name, Address, and Numbers Done!");
 
 	return 0;
 }
