@@ -1,0 +1,7 @@
+﻿  a1ms2.c
+c:\users\adams\source\repos\github\ipc-project-local\a1\ms2\a1ms2.c(41): warning C4047: '==': 'char [2]' differs in levels of indirection from 'int'
+c:\users\adams\source\repos\github\ipc-project-local\a1\ms2\a1ms2.c(61): warning C4047: '==': 'char [2]' differs in levels of indirection from 'int'
+c:\users\adams\source\repos\github\ipc-project-local\a1\ms2\a1ms2.c(77): warning C4047: '==': 'char [2]' differs in levels of indirection from 'int'
+c:\users\adams\source\repos\github\ipc-project-local\a1\ms2\a1ms2.c(86): warning C4047: '==': 'char [2]' differs in levels of indirection from 'int'
+c:\users\adams\source\repos\github\ipc-project-local\a1\ms2\a1ms2.c(95): warning C4047: '==': 'char [2]' differs in levels of indirection from 'int'
+  A1MS2.vcxproj -> C:\Users\adams\source\repos\GitHub\IPC-Project-LOCAL\A1\MS2\Debug\A1MS2.exe

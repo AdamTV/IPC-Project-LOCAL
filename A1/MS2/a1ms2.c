@@ -26,7 +26,7 @@ int main(void)
 	struct Name fullName = { {0} };
 	struct Address fullAddress = { 0,{0} };
 	struct Numbers fullNumbers = { {0} };
-	char yn;
+	char yn[2];
 
 	// Display the title
 	printf("Contact Management System\n");
@@ -34,29 +34,31 @@ int main(void)
 
 	// Contact Name Input:
 	printf("Please enter the contact's first name: ");
-	scanf("%30s", fullName.firstName);
+	scanf(" %31[^\n]", fullName.firstName);
 	printf("Do you want to enter a middle initial(s)? (y or n): ");
-	scanf("%1s", &yn);
+	scanf("%2s", yn);
+
 	if (yn == 'n') {
-		yn = 'n';
+		0;
 	}
 	else {
 		printf("Please enter the contact's middle initial(s): ");
-		scanf("%[6^\n]", fullName.middleInitial);
+		scanf(" %7[^\n]", fullName.middleInitial);
 	}
+
 	printf("Please enter the contact's last name: ");
-	scanf("%[35^\n]", fullName.lastName);
+	fgets(fullName.lastName, sizeof(fullName.lastName), stdin);
 
 	// Contact Address Input:
 	printf("Please enter the contact's street number: ");
 	scanf("%d", &fullAddress.streetNum);
 	printf("Please enter the contact's street name: ");
-	scanf("%[40^\n]", fullAddress.street);
+	scanf(" %")
 	printf("Do you want to enter an apartment number? (y or n): ");
-	scanf("%1s", &yn);
+	scanf("%2s", yn);
 
 	if (yn == 'n') {
-		yn = 'n';
+		0;
 	}
 	else {
 		printf("Please enter the contact's apartment number: ");
@@ -64,33 +66,33 @@ int main(void)
 	}
 
 	printf("Please enter the contact's postal code: ");
-	scanf("%7s", fullAddress.postalCode);
+	fgets(fullAddress.postalCode, sizeof(fullAddress.postalCode), stdin);
 	printf("Please enter the contact's city: ");
-	scanf("%40s", fullAddress.city);
+	fgets(fullAddress.city, sizeof(fullAddress.city), stdin);
 
 	// Contact Numbers Input:
 	printf("Do you want to enter a cell phone number? (y or n): ");
-	scanf("%1s", &yn);
+	scanf("%2s", yn);
 	if (yn == 'n') {
-		yn = 'n';
+		0;
 	}
 	else {
 		printf("Please enter the contact's cell phone number: ");
 		scanf("%10s", fullNumbers.cell);
 	}
 	printf("Do you want to enter a home phone number? (y or n): ");
-	scanf("%1s", &yn);
+	scanf("%2s", yn);
 	if (yn == 'n') {
-		yn = 'n';
+		0;
 	}
 	else {
 		printf("Please enter the contact's home phone number: ");
 		scanf("%10s", fullNumbers.home);
 	}
 	printf("Do you want to enter a business phone number? (y or n): ");
-	scanf("%1s", &yn);
+	scanf("%2s", yn);
 	if (yn == 'n') {
-		yn = 'n';
+		0;
 	}
 	else {
 		printf("Please enter the contact's business phone number: ");
