@@ -37,7 +37,7 @@ int main(void)
 	scanf(" %31[^\n]", fullName.firstName);
 	printf("Do you want to enter a middle initial(s)? (y or n): ");
 	scanf("%2s", yn);
-	if (*yn == 'y' | yn == 'Y') {
+	if ((*yn == 'y') | (*yn == 'Y')) {
 		printf("Please enter the contact's middle initial(s): ");
 		scanf(" %7[^\n]", fullName.middleInitial);
 	}
@@ -51,7 +51,7 @@ int main(void)
 	scanf(" %41[^\n]", fullAddress.street);
 	printf("Do you want to enter an apartment number? (y or n): ");
 	scanf("%2s", yn);
-	if (yn == 'y' | yn == 'Y') {
+	if ((*yn == 'y') | (*yn == 'Y')) {
 		printf("Please enter the contact's apartment number: ");
 		scanf("%d", &fullAddress.aptNum);
 	}
@@ -63,20 +63,20 @@ int main(void)
 	// Contact Numbers Input:
 	printf("Do you want to enter a cell phone number? (y or n): ");
 	scanf("%2s", yn);
-	if (yn == 'y' | yn == 'Y') {
+	if ((*yn == 'y') | (*yn == 'Y')) {
 		printf("Please enter the contact's cell phone number: ");
 		scanf("%10s", fullNumbers.cell);
 	}
 	
 	printf("Do you want to enter a home phone number? (y or n): ");
 	scanf("%2s", yn);
-	if (yn == 'y' | yn == 'Y') {
+	if ((*yn == 'y') | (*yn == 'Y')) {
 		printf("Please enter the contact's home phone number: ");
 		scanf("%10s", fullNumbers.home);
 	}
 	printf("Do you want to enter a business phone number? (y or n): ");
 	scanf("%2s", yn);
-	if (yn == 'y' | yn == 'Y') {
+	if ((*yn == 'y') | (*yn == 'Y')) {
 		printf("Please enter the contact's business phone number: ");
 		scanf("%10s", fullNumbers.business);
 	}
