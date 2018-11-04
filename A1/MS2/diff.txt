@@ -1,10 +1,10 @@
 
-In line number 7 of your output:
+In line number 2 of your output:
 The output should be:
-Please enter the contact's middle initial(s): Wong
+Contact Management System
 But your output is: 
-Please enter the contact's middle initial(s): L. A.
-                                              ^
-----------------------------------------------|
-Professor's character ASCII code: hex(57), dec(87)
-un-matched character ASCII code: hex(4c), dec(76)
+[?1034h~/ip/A1/MS2: ms2
+^
+|
+Professor's character ASCII code: hex(43), dec(67)
+un-matched character ASCII code: hex(1b), dec(27)

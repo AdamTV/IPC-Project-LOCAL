@@ -1,4 +1,4 @@
-Script started on Fri 02 Nov 2018 12:31:43 PM EDT
+Script started on Sat 03 Nov 2018 12:15:52 AM EDT
 [?1034h~/ip/A1/MS2: ms2
 Contact Management System
 -------------------------
@@ -39,7 +39,7 @@ Home phone number: 7052227777
 Business phone number: 4163338888
 
 Structure test for Name, Address, and Numbers Done!
-~/ip/A1/MS2: exit
+~/ip/A1/MS2: exit
 exit
 
-Script done on Fri 02 Nov 2018 12:33:10 PM EDT
+Script done on Sat 03 Nov 2018 12:17:16 AM EDT
