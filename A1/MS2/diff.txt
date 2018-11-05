@@ -1,10 +1,10 @@
 
-In line number 2 of your output:
+In line number 42 of your output:
 The output should be:
-Contact Management System
+
 But your output is: 
-[?1034h~/ip/A1/MS2: ms2
+~/ip/A1/MS2: exit
 ^
 |
-Professor's character ASCII code: hex(43), dec(67)
-un-matched character ASCII code: hex(1b), dec(27)
+Professor's character ASCII code: hex(0), dec(0)
+un-matched character ASCII code: hex(7e), dec(126)

@@ -1,4 +1,4 @@
-Script started on Sat 03 Nov 2018 12:15:52 AM EDT
+Script started on Sun 04 Nov 2018 10:06:45 PM EST
 [?1034h~/ip/A1/MS2: ms2
 Contact Management System
 -------------------------
@@ -42,4 +42,4 @@ Structure test for Name, Address, and Numbers Done!
 ~/ip/A1/MS2: exit
 exit
 
-Script done on Sat 03 Nov 2018 12:17:16 AM EDT
+Script done on Sun 04 Nov 2018 10:07:57 PM EST
