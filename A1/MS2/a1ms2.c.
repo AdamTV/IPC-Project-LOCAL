@@ -26,7 +26,7 @@ int main(void)
 	struct Name fullName = { {0} };
 	struct Address fullAddress = { 0,{0} };
 	struct Numbers fullNumbers = { {0} };
-	char yn[2];
+	char yn;
 
 	// Display the title
 	printf("Contact Management System\n");
@@ -36,8 +36,8 @@ int main(void)
 	printf("Please enter the contact's first name: ");
 	scanf(" %31[^\n]", fullName.firstName);
 	printf("Do you want to enter a middle initial(s)? (y or n): ");
-	scanf("%2s", yn);
-	if ((*yn == 'y') | (*yn == 'Y')) {
+	scanf(" %c", &yn);
+	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's middle initial(s): ");
 		scanf(" %7[^\n]", fullName.middleInitial);
 	}
@@ -50,8 +50,8 @@ int main(void)
 	printf("Please enter the contact's street name: ");
 	scanf(" %41[^\n]", fullAddress.street);
 	printf("Do you want to enter an apartment number? (y or n): ");
-	scanf("%2s", yn);
-	if ((*yn == 'y') | (*yn == 'Y')) {
+	scanf(" %c", &yn);
+	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's apartment number: ");
 		scanf("%d", &fullAddress.aptNum);
 	}
@@ -62,21 +62,21 @@ int main(void)
 
 	// Contact Numbers Input:
 	printf("Do you want to enter a cell phone number? (y or n): ");
-	scanf("%2s", yn);
-	if ((*yn == 'y') | (*yn == 'Y')) {
+	scanf(" %c", &yn);
+	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's cell phone number: ");
 		scanf("%10s", fullNumbers.cell);
 	}
 	
 	printf("Do you want to enter a home phone number? (y or n): ");
-	scanf("%2s", yn);
-	if ((*yn == 'y') | (*yn == 'Y')) {
+	scanf(" %c", &yn);
+	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's home phone number: ");
 		scanf("%10s", fullNumbers.home);
 	}
 	printf("Do you want to enter a business phone number? (y or n): ");
-	scanf("%2s", yn);
-	if ((*yn == 'y') | (*yn == 'Y')) {
+	scanf(" %c", &yn);
+	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's business phone number: ");
 		scanf("%10s", fullNumbers.business);
 	}
@@ -97,7 +97,7 @@ int main(void)
 	printf("\nBusiness phone number: %s", fullNumbers.business);
 
 	// Display Completion Message
-	printf("\n\nStructure test for Name, Address, and Numbers Done!");
+	printf("\n\nStructure test for Name, Address, and Numbers Done!\n");
 
 	return 0;
 }
