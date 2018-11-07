@@ -18,23 +18,22 @@ Milestone:  4
 // HINT: put the header file name in double quotes so the compiler knows
 //       to look for it in the same directory/folder as this source file
 // #include your contacts header file on the next line:
-#include "contacts.h"
+
 
 int main(void)
 {
     // Declare variables here:
-struct Contact contact {0,{0}};
+
     // Create a variable of type Contact and call it something self-describing like "contact"
     // - HINT: Be sure to initialize the values to 0 and empty C strings
     // IMPORTANT:  Do NOT declare variables of type Name, Address, or Numbers
 
 
     // Display the title
-    printf("Contact Management System\n");
-    printf("-------------------------\n");
-  
+    
+
     // Call the Contact function getName to store the values for the Name member
-    getName
+
 
     // Call the Contact function getAddress to store the values for the Address member
 
