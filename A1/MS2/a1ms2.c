@@ -67,7 +67,6 @@ int main(void)
 		printf("Please enter the contact's cell phone number: ");
 		scanf("%10s", fullNumbers.cell);
 	}
-	
 	printf("Do you want to enter a home phone number? (y or n): ");
 	scanf(" %c", &yn);
 	if (yn == 'y' || yn == 'Y') {
@@ -81,7 +80,6 @@ int main(void)
 		scanf("%10s", fullNumbers.business);
 	}
 	
-
 	// Display Contact Summary Details
 	printf("\nContact Details\n---------------\nName Details");
 	printf("\nFirst name: %s", fullName.firstName);
