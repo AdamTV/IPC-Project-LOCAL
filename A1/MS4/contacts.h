@@ -59,3 +59,6 @@ void getAddress(struct Address *)
 // Get and store from standard input the values for Numbers
 // Place your code here...
 void getNumbers(struct Numbers *)
+
+//Clear Buffer
+void clear(void)
