@@ -1,6 +1,6 @@
--/* -------------------------------------------
+/* -------------------------------------------
 Name:			ADAM STINZIANI
-Student number: 124521188
+Student number: 	124521188
 Email:			astinziani@myseneca.ca
 Section:		IPC144SVV
 Date:			2018-11-05
@@ -41,9 +41,6 @@ struct Contact {
 	struct Address address;
 	struct Numbers numbers;
 };
-
-
-
 
 //------------------------------------------------------
 // Function Prototypes
