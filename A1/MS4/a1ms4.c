@@ -18,11 +18,12 @@ Milestone:  4
 // HINT: put the header file name in double quotes so the compiler knows
 //       to look for it in the same directory/folder as this source file
 // #include your contacts header file on the next line:
-
+#include "contacts.h"
 
 int main(void)
 {
     // Declare variables here:
+	struct Contact * contact = { 0 };
 
     // Create a variable of type Contact and call it something self-describing like "contact"
     // - HINT: Be sure to initialize the values to 0 and empty C strings
@@ -30,22 +31,34 @@ int main(void)
 
 
     // Display the title
-    
+	printf("Contact Management System\n");
+	printf("-------------------------\n");
 
     // Call the Contact function getName to store the values for the Name member
-
+	getName(&contact->name);
 
     // Call the Contact function getAddress to store the values for the Address member
-
+	getAddress(&contact->address);
 
     // Call the Contact function getNumbers to store the values for the Numbers member
-
+	getNumbers(&contact->numbers);
 
     // Display Contact summary details
-
+	printf("\nContact Details\n---------------\nName Details");
+	printf("\nFirst name: %s", contact->name.firstName);
+	printf("\nMiddle initial(s): %s", contact->name.middleInitial);
+	printf("\nLast name: %s\n\nAddress Details", contact->name.lastName);
+	printf("\nStreet number: %i", contact->address.streetNum);
+	printf("\nStreet name: %s", contact->address.street);
+	printf("\nApartment: %i", contact->address.aptNum);
+	printf("\nPostal code: %s", contact->address.postalCode);
+	printf("\nCity: %s\n\nPhone Numbers:", contact->address.city);
+	printf("\nCell phone number: %s", contact->numbers.cell);
+	printf("\nHome phone number: %s", contact->numbers.home);
+	printf("\nBusiness phone number: %s", contact->numbers.business);
 
     // Display Completion Message
-    printf("Structure test for Contact using functions done!\n");
+    printf("\n\nStructure test for Contact using functions done!\n");
     
     return 0;
 }

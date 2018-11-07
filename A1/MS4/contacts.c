@@ -24,22 +24,23 @@ char yn;
 
 // Get and store from standard input the values for Name
 // Put your code here that defines the Contact getName function:
-void getName(struct Contact *name) {
+void getName(struct Name * name) {
 	printf("Please enter the contact's first name: ");
-	scanf(" %31[^\n]", name->name.firstName);
+	scanf(" %31[^\n]", name->firstName);
 	printf("Do you want to enter a middle initial(s)? (y or n): ");
-	scanf(" %c", &yn);
+	scanf("%c", &yn);
+	clear();
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's middle initial(s): ");
-		scanf(" %7[^\n]", name->name.middleInitial);
+		scanf("%[^\n]", name->middleInitial);
 	}
 	printf("Please enter the contact's last name: ");
-	scanf(" %36[^\n]", name->name.lastName);
+	scanf(" %36[^\n]", name->lastName);
 }
 
 // Get and store from standard input the values for Address
 // Put your code here that defines the Contact getAddress function:
-void getAddress(struct Contact *address) {
+void getAddress(struct Contact * address) {
 	printf("Please enter the contact's street number: ");
 	scanf("%d", &address->address.streetNum);
 	printf("Please enter the contact's street name: ");
@@ -77,4 +78,11 @@ void getNumbers(struct Contact * numbers) {
 		printf("Please enter the contact's business phone number: ");
 		scanf("%10s", numbers->numbers.business);
 	}
+}
+
+// empties the input buffer 
+void clear(void)
+{
+	while (getchar() != '\n')
+		;  // empty statement intentional 
 }
