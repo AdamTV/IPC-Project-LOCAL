@@ -1,4 +1,2 @@
-﻿  contacts.c
-c:\users\adams\source\repos\github\ipc-project-local\a1\ms4\contacts.c(43): warning C4028: formal parameter 1 different from declaration
-c:\users\adams\source\repos\github\ipc-project-local\a1\ms4\contacts.c(62): warning C4028: formal parameter 1 different from declaration
-  A1MS4.vcxproj -> C:\Users\adams\source\repos\GitHub\IPC-Project-LOCAL\A1\MS4\Debug\A1MS4.exe
+﻿  a1ms4.c
+c:\users\adams\source\repos\github\ipc-project-local\a1\ms4\a1ms4.c(38): error C2231: '.name': left operand points to 'struct', use '->'
