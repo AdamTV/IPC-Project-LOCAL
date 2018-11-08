@@ -56,7 +56,6 @@ void getAddress(struct Address * address) {
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's apartment number: ");
-		clear();
 		scanf("%d", &Address.aptNum);
 	}
 	printf("Please enter the contact's postal code: ");
@@ -77,7 +76,6 @@ void getNumbers(struct Numbers * numbers) {
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's cell phone number: ");
-		clear();
 		scanf("%10s", Numbers.cell);
 	}
 	printf("Do you want to enter a home phone number? (y or n): ");
@@ -85,7 +83,6 @@ void getNumbers(struct Numbers * numbers) {
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's home phone number: ");
-		clear();
 		scanf("%10s", Numbers.home);
 	}
 	printf("Do you want to enter a business phone number? (y or n): ");
@@ -93,7 +90,6 @@ void getNumbers(struct Numbers * numbers) {
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's business phone number: ");
-		clear();
 		scanf("%10s", Numbers.business);
 	}
 	*numbers = Numbers;
