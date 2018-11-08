@@ -25,74 +25,68 @@ char yn;
 // Get and store from standard input the values for Name
 // Put your code here that defines the Contact getName function:
 void getName(struct Name * name) {
-	struct Name Name = { {0} };
 	printf("Please enter the contact's first name: ");
-	scanf("%30[^\n]", Name.firstName);
+	scanf("%30[^\n]", name->firstName);
 	printf("Do you want to enter a middle initial(s)? (y or n): ");
 	clear();
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's middle initial(s): ");
 		clear();
-		scanf("%6[^\n]", Name.middleInitial);
+		scanf("%6[^\n]", name->middleInitial);
 	}
 	printf("Please enter the contact's last name: ");
 	clear();
-	scanf("%35[^\n]", Name.lastName);
-	*name = Name;
+	scanf("%35[^\n]", name->lastName);
 }
 
 // Get and store from standard input the values for Address
 // Put your code here that defines the Contact getAddress function:
 void getAddress(struct Address * address) {
-	struct Address Address = { 0, {0} };
 	printf("Please enter the contact's street number: ");
-	scanf("%d", &Address.streetNum);
+	scanf("%d", &address->streetNum);
 	printf("Please enter the contact's street name: ");
 	clear();
-	scanf("%40[^\n]", Address.street);
+	scanf("%40[^\n]", address->street);
 	printf("Do you want to enter an apartment number? (y or n): ");
 	clear();
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's apartment number: ");
-		scanf("%d", &Address.aptNum);
+		scanf("%d", address->aptNum);
 	}
 	printf("Please enter the contact's postal code: ");
 	clear();
-	scanf("%7[^\n]", Address.postalCode);
+	scanf("%7[^\n]", address->postalCode);
 	printf("Please enter the contact's city: ");
 	clear();
-	scanf("%40[^\n]", Address.city);
-	*address = Address;
+	scanf("%40[^\n]", address->city);
 }
 
 // Get and store from standard input the values for Numbers
 // Put your code here that defines the Contact getNumbers function:
 void getNumbers(struct Numbers * numbers) {
-	struct Numbers Numbers = { {0} };
 	printf("Do you want to enter a cell phone number? (y or n): ");
 	clear();
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's cell phone number: ");
-		scanf("%10s", Numbers.cell);
+		scanf("%10s", numbers->cell);
 	}
 	printf("Do you want to enter a home phone number? (y or n): ");
 	clear();
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's home phone number: ");
-		scanf("%10s", Numbers.home);
+		scanf("%10s", numbers->home);
 	}
 	printf("Do you want to enter a business phone number? (y or n): ");
 	clear();
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's business phone number: ");
-		scanf("%10s", Numbers.business);
+		scanf("%10s", numbers->business);
 	}
-	*numbers = Numbers;
 }
 
 // empties the input buffer 
