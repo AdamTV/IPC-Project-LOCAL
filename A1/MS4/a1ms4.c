@@ -1,9 +1,9 @@
 /* -------------------------------------------
-Name:
-Student number:
-Email:
-Section:
-Date:
+Name:			ADAM STINZIANI
+Student number:	124521188
+Email:			astinziani@myseneca.ca
+Section:		IPC144SVV
+Date:			2018-11-07
 ----------------------------------------------
 Assignment: 1
 Milestone:  4
@@ -23,7 +23,7 @@ Milestone:  4
 int main(void)
 {
     // Declare variables here:
-	struct Contact * contact = { 0 };
+	struct Contact contact = { 0, {0} };
 
     // Create a variable of type Contact and call it something self-describing like "contact"
     // - HINT: Be sure to initialize the values to 0 and empty C strings
@@ -35,28 +35,28 @@ int main(void)
 	printf("-------------------------\n");
 
     // Call the Contact function getName to store the values for the Name member
-	getName(&contact->name);
+	getName(&contact.name);
 
     // Call the Contact function getAddress to store the values for the Address member
-	getAddress(&contact->address);
+	getAddress(&contact.address);
 
     // Call the Contact function getNumbers to store the values for the Numbers member
-	getNumbers(&contact->numbers);
+	getNumbers(&contact.numbers);
 
     // Display Contact summary details
 	printf("\nContact Details\n---------------\nName Details");
-	printf("\nFirst name: %s", contact->name.firstName);
-	printf("\nMiddle initial(s): %s", contact->name.middleInitial);
-	printf("\nLast name: %s\n\nAddress Details", contact->name.lastName);
-	printf("\nStreet number: %i", contact->address.streetNum);
-	printf("\nStreet name: %s", contact->address.street);
-	printf("\nApartment: %i", contact->address.aptNum);
-	printf("\nPostal code: %s", contact->address.postalCode);
-	printf("\nCity: %s\n\nPhone Numbers:", contact->address.city);
-	printf("\nCell phone number: %s", contact->numbers.cell);
-	printf("\nHome phone number: %s", contact->numbers.home);
-	printf("\nBusiness phone number: %s", contact->numbers.business);
-
+	printf("\nFirst name: %s", contact.name.firstName);
+	printf("\nMiddle initial(s): %s", contact.name.middleInitial);
+	printf("\nLast name: %s\n\nAddress Details", contact.name.lastName);
+	printf("\nStreet number: %i", contact.address.streetNum);
+	printf("\nStreet name: %s", contact.address.street);
+	printf("\nApartment: %i", contact.address.aptNum);
+	printf("\nPostal code: %s", contact.address.postalCode);
+	printf("\nCity: %s\n\nPhone Numbers:", contact.address.city);
+	printf("\nCell phone number: %s", contact.numbers.cell);
+	printf("\nHome phone number: %s", contact.numbers.home);
+	printf("\nBusiness phone number: %s", contact.numbers.business);
+	
     // Display Completion Message
     printf("\n\nStructure test for Contact using functions done!\n");
     
