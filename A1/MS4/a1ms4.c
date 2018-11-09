@@ -48,9 +48,9 @@ int main(void)
 	printf("\nFirst name: %s", contact.name.firstName);
 	printf("\nMiddle initial(s): %s", contact.name.middleInitial);
 	printf("\nLast name: %s\n\nAddress Details", contact.name.lastName);
-	printf("\nStreet number: %i", contact.address.streetNum);
+	printf("\nStreet number: %u", contact.address.streetNum);
 	printf("\nStreet name: %s", contact.address.street);
-	printf("\nApartment: %i", contact.address.aptNum);
+	printf("\nApartment: %u", contact.address.aptNum);
 	printf("\nPostal code: %s", contact.address.postalCode);
 	printf("\nCity: %s\n\nPhone Numbers:", contact.address.city);
 	printf("\nCell phone number: %s", contact.numbers.cell);

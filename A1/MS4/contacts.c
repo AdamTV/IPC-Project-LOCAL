@@ -44,7 +44,7 @@ void getName(struct Name * name) {
 // Put your code here that defines the Contact getAddress function:
 void getAddress(struct Address * address) {
 	printf("Please enter the contact's street number: ");
-	scanf("%d", &address->streetNum);
+	scanf("%u", &address->streetNum);
 	printf("Please enter the contact's street name: ");
 	clear();
 	scanf("%40[^\n]", address->street);
@@ -53,7 +53,7 @@ void getAddress(struct Address * address) {
 	scanf("%c", &yn);
 	if (yn == 'y' || yn == 'Y') {
 		printf("Please enter the contact's apartment number: ");
-		scanf("%d", address->aptNum);
+		scanf("%u", address->aptNum);
 	}
 	printf("Please enter the contact's postal code: ");
 	clear();
