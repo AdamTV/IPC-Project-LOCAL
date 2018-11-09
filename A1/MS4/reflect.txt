@@ -1,0 +1,10 @@
+1. I beleive this assignment asked me to code a struct Contact holding other structs so I could effe
+ciently store the contact information for 1 contact, and more if need be (with a little extra code).
+
+2. The most difficult part of this assignment was initializing sturct Contact contact *facepalm* I
+didn't realize I did it wrong and thought there was an error in my fuctions, little did I know I was
+looking in the wrong file (contacts.c) until I saw there was no valid address for my variables but
+wait I just sent you these variables oh wait no I didn't even declare them yet.
+
+3. 2 hours maximum probably a lot less.
+
