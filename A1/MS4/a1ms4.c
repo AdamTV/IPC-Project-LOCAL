@@ -1,6 +1,6 @@
 /* -------------------------------------------
 Name:			ADAM STINZIANI
-Student number:	124521188
+Student number:		124521188
 Email:			astinziani@myseneca.ca
 Section:		IPC144SVV
 Date:			2018-11-07
@@ -13,22 +13,12 @@ Milestone:  4
 
 #include <stdio.h>
 
-// This source file needs to "know about" the structures you declared
-// in the header file before referring to those new types:
-// HINT: put the header file name in double quotes so the compiler knows
-//       to look for it in the same directory/folder as this source file
-// #include your contacts header file on the next line:
 #include "contacts.h"
 
 int main(void)
 {
     // Declare variables here:
-	struct Contact contact = { 0, {0} };
-
-    // Create a variable of type Contact and call it something self-describing like "contact"
-    // - HINT: Be sure to initialize the values to 0 and empty C strings
-    // IMPORTANT:  Do NOT declare variables of type Name, Address, or Numbers
-
+	struct Contact contact = {{{'\0'}},{0,{'\0'}},{{'\0'}}};
 
     // Display the title
 	printf("Contact Management System\n");

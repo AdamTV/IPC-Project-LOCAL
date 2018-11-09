@@ -20,7 +20,7 @@ Milestone:  4
 // #include your contacts header file on the next line:
 #include "contacts.h"
 
-char yn;
+char reply;
 
 // Get and store from standard input the values for Name
 // Put your code here that defines the Contact getName function:
@@ -29,8 +29,8 @@ void getName(struct Name * name) {
 	scanf("%30[^\n]", name->firstName);
 	printf("Do you want to enter a middle initial(s)? (y or n): ");
 	clear();
-	scanf("%c", &yn);
-	if (yn == 'y' || yn == 'Y') {
+	scanf("%c", &reply);
+	if (reply == 'y' || reply == 'Y') {
 		printf("Please enter the contact's middle initial(s): ");
 		clear();
 		scanf("%6[^\n]", name->middleInitial);
@@ -50,10 +50,10 @@ void getAddress(struct Address * address) {
 	scanf("%40[^\n]", address->street);
 	printf("Do you want to enter an apartment number? (y or n): ");
 	clear();
-	scanf("%c", &yn);
-	if (yn == 'y' || yn == 'Y') {
+	scanf("%c", &reply);
+	if (reply == 'y' || reply == 'Y') {
 		printf("Please enter the contact's apartment number: ");
-		scanf("%u", address->aptNum);
+		scanf("%u", &address->aptNum);
 	}
 	printf("Please enter the contact's postal code: ");
 	clear();
@@ -68,22 +68,22 @@ void getAddress(struct Address * address) {
 void getNumbers(struct Numbers * numbers) {
 	printf("Do you want to enter a cell phone number? (y or n): ");
 	clear();
-	scanf("%c", &yn);
-	if (yn == 'y' || yn == 'Y') {
+	scanf("%c", &reply);
+	if (reply == 'y' || reply == 'Y') {
 		printf("Please enter the contact's cell phone number: ");
 		scanf("%10s", numbers->cell);
 	}
 	printf("Do you want to enter a home phone number? (y or n): ");
 	clear();
-	scanf("%c", &yn);
-	if (yn == 'y' || yn == 'Y') {
+	scanf("%c", &reply);
+	if (reply == 'y' || reply == 'Y') {
 		printf("Please enter the contact's home phone number: ");
 		scanf("%10s", numbers->home);
 	}
 	printf("Do you want to enter a business phone number? (y or n): ");
 	clear();
-	scanf("%c", &yn);
-	if (yn == 'y' || yn == 'Y') {
+	scanf("%c", &reply);
+	if (reply == 'y' || reply == 'Y') {
 		printf("Please enter the contact's business phone number: ");
 		scanf("%10s", numbers->business);
 	}
