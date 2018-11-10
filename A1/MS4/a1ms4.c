@@ -22,7 +22,7 @@ int main(void)
 
     // Display the title
 	printf("Contact Management System\n");
-	printf("-------------------------\n");
+	printf("=========================\n");
 
     // Call the Contact function getName to store the values for the Name member
 	getName(&contact.name);
@@ -34,15 +34,15 @@ int main(void)
 	getNumbers(&contact.numbers);
 
     // Display Contact summary details
-	printf("\nContact Details\n---------------\nName Details");
+	printf("\nContact Details\n===============\nName Details\n------------");
 	printf("\nFirst name: %s", contact.name.firstName);
 	printf("\nMiddle initial(s): %s", contact.name.middleInitial);
-	printf("\nLast name: %s\n\nAddress Details", contact.name.lastName);
+	printf("\nLast name: %s\n\nAddress Details\n---------------", contact.name.lastName);
 	printf("\nStreet number: %u", contact.address.streetNum);
 	printf("\nStreet name: %s", contact.address.street);
 	printf("\nApartment: %u", contact.address.aptNum);
 	printf("\nPostal code: %s", contact.address.postalCode);
-	printf("\nCity: %s\n\nPhone Numbers:", contact.address.city);
+	printf("\nCity: %s\n\nPhone Numbers\n-------------", contact.address.city);
 	printf("\nCell phone number: %s", contact.numbers.cell);
 	printf("\nHome phone number: %s", contact.numbers.home);
 	printf("\nBusiness phone number: %s", contact.numbers.business);

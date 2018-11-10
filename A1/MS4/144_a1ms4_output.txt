@@ -1,45 +1,46 @@
-Script started on Sun 11 Mar 2018 04:23:20 PM EDT
-cameron.gray@matrix:> ms4
+
+Script started on Wed 24 Oct 2018 09:55:58 PM EDT
 Contact Management System
--------------------------
-Please enter the contact's first name: Wilma
+=========================
+Please enter the contact's first name: Wilma Dee
 Do you want to enter a middle initial(s)? (y or n): y
-Please enter the contact's middle initial(s): Dino
-Please enter the contact's last name: Flintstone
-Please enter the contact's street number: 100
-Please enter the contact's street name: Bedrock
+Please enter the contact's middle initial(s): N. O.
+Please enter the contact's last name: Flint Rubble
+Please enter the contact's street number: 30
+Please enter the contact's street name: Bedrock St.
 Do you want to enter an apartment number? (y or n): y
-Please enter the contact's apartment number: 14
+Please enter the contact's apartment number: 12
 Please enter the contact's postal code: Z8Z 7R7
-Please enter the contact's city: Markham
+Please enter the contact's city: North York
 Do you want to enter a cell phone number? (y or n): Y
-Please enter the contact's cell phone number: 647-505-5555
+Please enter the contact's cell phone number: 9992223333
 Do you want to enter a home phone number? (y or n): Y
-Please enter the contact's home phone number: 905-222-3333
+Please enter the contact's home phone number: 8881112222
 Do you want to enter a business phone number? (y or n): Y
-Please enter the contact's business phone number: 416-491-5050
+Please enter the contact's business phone number: 3337779999
 
 Contact Details
----------------
+===============
 Name Details
-First name: Wilma
-Middle initial(s): Dino
-Last name: Flintstone
+------------
+First name: Wilma Dee
+Middle initial(s): N. O.
+Last name: Flint Rubble
 
 Address Details
-Street number: 100
-Street name: Bedrock
-Apartment: 14
+---------------
+Street number: 30
+Street name: Bedrock St.
+Apartment: 12
 Postal code: Z8Z 7R7
-City: Markham
+City: North York
 
-Phone Numbers:
-Cell phone number: 647-505-5555
-Home phone number: 905-222-3333
-Business phone number: 416-491-5050
+Phone Numbers
+-------------
+Cell phone number: 9992223333
+Home phone number: 8881112222
+Business phone number: 3337779999
 
 Structure test for Contact using functions done!
-cameron.gray@matrix:> exit
-exit
 
-Script done on Sun 11 Mar 2018 04:24:32 PM EDT
+Script done on Wed 24 Oct 2018 09:56:57 PM EDT
