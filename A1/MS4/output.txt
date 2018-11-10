@@ -1,45 +1,42 @@
-Script started on Fri 09 Nov 2018 02:05:22 PM EST
+Script started on Fri 09 Nov 2018 10:52:05 PM EST
 [?1034h~/ip/A1/MS4: ms4
 Contact Management System
 -------------------------
 Please enter the contact's first name: Wilma Dee
-Do you want to enter a middle initial(s)? (y or n): y
-Please enter the contact's middle initial(s): N. O.
-Please enter the contact's last name: Flint Rubble
-Please enter the contact's street number: 30
-Please enter the contact's street name: Bedrock St.
-Do you want to enter an apartment number? (y or n): y
-Please enter the contact's apartment number: 12
-Please enter the contact's postal code: Z8Z 7R7
-Please enter the contact's city: North York
-Do you want to enter a cell phone number? (y or n): Y
-Please enter the contact's cell phone number: 9992223333
-Do you want to enter a home phone number? (y or n): Y
-Please enter the contact's home phone number: 8881112222
-Do you want to enter a business phone number? (y or n): Y
-Please enter the contact's business phone number: 3337779999
+Do you want to enter a middle initial(s)? (y or n): exit
+Please enter the contact's last name: asdf
+Please enter the contact's street number: asdf
+Please enter the contact's street name: asdf
+Do you want to enter an apartment number? (y or n): asdf
+Please enter the contact's postal code: asdf
+Please enter the contact's city: asdf
+Do you want to enter a cell phone number? (y or n): asdf
+Do you want to enter a home phone number? (y or n): asdf
+Do you want to enter a business phone number? (y or n): asdfasdf
 
 Contact Details
 ---------------
 Name Details
 First name: Wilma Dee
-Middle initial(s): N. O.
-Last name: Flint Rubble
+Middle initial(s): 
+Last name: asdf
 
 Address Details
-Street number: 30
-Street name: Bedrock St.
-Apartment: 12
-Postal code: Z8Z 7R7
-City: North York
+Street number: 0
+Street name: asdf
+Apartment: 0
+Postal code: asdf
+City: asdf
 
 Phone Numbers:
-Cell phone number: 9992223333
-Home phone number: 8881112222
-Business phone number: 3337779999
+Cell phone number: 
+Home phone number: 
+Business phone number: 
 
 Structure test for Contact using functions done!
-~/ip/A1/MS4: exit
+~/ip/A1/MS4: asdf
+bash: asdf: command not found
+~/ip/A1/MS4: exit
 exit
 
-Script done on Fri 09 Nov 2018 02:06:39 PM EST
+Script done on Fri 09 Nov 2018 10:52:31 PM EST

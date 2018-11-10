@@ -3,8 +3,7 @@ ciently store the contact information for 1 contact, and more if need be (with a
 
 2. The most difficult part of this assignment was initializing sturct Contact contact *facepalm* I
 didn't realize I did it wrong and thought there was an error in my fuctions, little did I know I was
-looking in the wrong file (contacts.c) until I saw there was no valid address for my variables but
-wait I just sent you these variables oh wait no I didn't even declare them yet.
+looking in the wrong file (contacts.c) until I saw there was no valid address for my variables...
 
 3. 2 hours maximum probably a lot less.
 
