@@ -58,7 +58,7 @@ int getIntInRange(int min, int max)
 
 	while (Value < min || Value > max)
 	{
-		printf("*** OUT OF RANGE *** <Enter a number between %d and %d\>: ", min, max);
+		printf("*** OUT OF RANGE *** <Enter a number between %d and %d>: ", min, max);
 		Value = getInt();
 	}
 	return Value;
