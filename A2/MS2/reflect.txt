@@ -1,0 +1,13 @@
+1. A function is a modular section of code within a procedurally 
+constructed program. A function consists of a header or a prototype
+and a body or a definition. Good design principles for functions 
+are that they perform a single task, and do not depend on too much 
+information from other functions. Functions are required in any
+programming language mainly for modularity & reusability.
+
+2. As per their name, the helper functions are designed to help in
+the process of retrieving the values for contacts. Their purpose is
+to help retrieve information and that is why they are grouped to-
+gether. They were not included in the contacts module because their
+purpose is not to assign values to contact members, as is the 
+purpose of the contacts module.
