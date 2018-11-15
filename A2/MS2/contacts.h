@@ -17,7 +17,7 @@ Milestone:  2
 struct Name
 {
     char firstName[31];
-    char middleInitial[7];
+    char middleInitial[15];
     char lastName[36];
 };
 

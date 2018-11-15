@@ -23,6 +23,7 @@ int Return;
 // getName:
 void getName(struct Name * name)
 {
+	clearKeyboard();
 	printf("Please enter the contact's first name: ");
 	scanf("%30[^\n]", name->firstName);
 	printf("Do you want to enter a middle initial(s)? (y or n): ");
@@ -32,7 +33,7 @@ void getName(struct Name * name)
 	{
 		printf("Please enter the contact's middle initial(s): ");
 		clearKeyboard();
-		scanf("%6[^\n]", name->middleInitial);
+		scanf("[^\n]", name->middleInitial);
 	}
 	printf("Please enter the contact's last name: ");
 	clearKeyboard();

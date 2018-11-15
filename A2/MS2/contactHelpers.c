@@ -19,20 +19,20 @@ Milestone:  2
 // Function Definitions
 //------------------------------------------------------
 
-// clearKeyboard:  Empty function definition 
+// clearKeyboard:
 void clearKeyboard(void)
 {
-	while (getchar() != '\n')	; // empty execution code block on purpose
+	while (getchar() != '\n'); // empty execution code block on purpose
 }
 
-// pause: Empty function definition goes here:
+// pause:
 void pause(void)
 {
 	printf("(Press Enter to continue)");
 	clearKeyboard();
 }
 
-// getInt: Empty function definition goes here:
+// getInt:
 int getInt(void)
 {
 	char NL = 'x';
@@ -50,7 +50,7 @@ int getInt(void)
 	return Value;
 }
 
-// getIntInRange: Empty function definition goes here:
+// getIntInRange:
 int getIntInRange(int min, int max)
 {
 	int Value;
@@ -64,28 +64,28 @@ int getIntInRange(int min, int max)
 	return Value;
 }
 
-// yes: Empty function definition goes here:
+// yes:
 int yes(void)
 {
-	char Value;
+	char Value = 0;
 	char NL = 'x';
 
-	while (NL != '\n' || Value != 'Y' || Value != 'y' || Value != 'N' || Value != 'n')
+	do
 	{
 		scanf("%c%c", &Value, &NL);
-		if (NL != '\n')
+		if (Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n' || NL != 10)
 		{
 			clearKeyboard();
 			printf("*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: ");
 		}
-	}
-	if (Value == 'Y' || Value == 'y')
-		return 1;
-	else
-		return 0;
+	} while (Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n' || NL != 10);
+		if (Value == 'Y' || Value == 'y')
+			return 1;
+		else
+			return 0;
 }
 
-// menu: Empty function definition goes here:
+// menu:
 int menu(void)
 {
 	int Value;
@@ -106,7 +106,7 @@ int menu(void)
 	return Value;
 }
 
-// contactManagerSystem: Empty function definition goes here:
+// contactManagerSystem:
 void contactManagerSystem(void)
 {
 	int Value, Return;
