@@ -69,20 +69,20 @@ int yes(void)
 {
 	char Value = 0;
 	char NL = 'x';
-
+	
 	do
 	{
 		scanf("%c%c", &Value, &NL);
-		if (Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n' || NL != 10)
+		if ((Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n') || NL != 10)
 		{
 			clearKeyboard();
 			printf("*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: ");
 		}
-	} while (Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n' || NL != 10);
-		if (Value == 'Y' || Value == 'y')
-			return 1;
-		else
-			return 0;
+	} while ((Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n') || NL != 10);
+	if (Value == 'Y' || Value == 'y')
+		return 1;
+	else
+		return 0;
 }
 
 // menu:
