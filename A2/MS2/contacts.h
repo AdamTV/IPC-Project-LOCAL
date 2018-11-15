@@ -14,7 +14,8 @@ Milestone:  2
 //------------------------------------------------------
 
 // Structure type Name declaration
-struct Name {
+struct Name
+{
     char firstName[31];
     char middleInitial[7];
     char lastName[36];
@@ -22,7 +23,8 @@ struct Name {
 
 // Structure type Address declaration
 // Place your code here...
-struct Address {
+struct Address
+{
 	int streetNumber;
 	char street[41];
 	int apartmentNumber;
@@ -32,7 +34,8 @@ struct Address {
 
 // Structure type Numbers declaration
 // Place your code here...
-struct Numbers {
+struct Numbers
+{
 	char cell[11];
 	char home[11];
 	char business[11];
@@ -42,7 +45,7 @@ struct Numbers {
 // Structure type Contact declaration
 // NOTE:  Make sure the structure name does not have an 's' on the end!
 // Place your code here...
-struct Contact {
+struct Contact{
 	struct Name name;
 	struct Address address;
 	struct Numbers numbers;
@@ -74,6 +77,3 @@ void getNumbers(struct Numbers *);
 // NOTE:  Make sure the structure Contact does not have an 's' on the end!
 // Put function prototype below:
 void getContact(struct Contact *);
-
-//Clear Buffer
-void clear(void);

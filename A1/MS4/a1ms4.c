@@ -18,7 +18,7 @@ Milestone:  4
 int main(void)
 {
     // Declare variables here:
-	struct Contact contact = {{{'\0'}},{0,{'\0'}},{{'\0'}}};
+	struct Contact contact = {{{'\0'}}};
 
     // Display the title
 	printf("Contact Management System\n");

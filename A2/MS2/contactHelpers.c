@@ -65,7 +65,6 @@ int getIntInRange(int min, int max)
 }
 
 // yes: Empty function definition goes here:
-
 int yes(void)
 {
 	char Value;
