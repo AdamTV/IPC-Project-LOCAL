@@ -26,14 +26,14 @@ void getName(struct Name * name)
 	clearKeyboard();
 	printf("Please enter the contact's first name: ");
 	scanf("%30[^\n]", name->firstName);
-	printf("Do you want to enter a middle initial(s)? (y or n): ");
 	clearKeyboard();
+	printf("Do you want to enter a middle initial(s)? (y or n): ");
 	Return = yes();
+
 	if (Return == 1)
 	{
 		printf("Please enter the contact's middle initial(s): ");
-		clearKeyboard();
-		scanf("[^\n]", name->middleInitial);
+		scanf("%[^\n]", name->middleInitial);
 	}
 	printf("Please enter the contact's last name: ");
 	clearKeyboard();
@@ -46,7 +46,6 @@ void getAddress(struct Address * address)
 	printf("Please enter the contact's street number: ");
 	address->streetNumber = getInt();
 	printf("Please enter the contact's street name: ");
-	clearKeyboard();
 	scanf("%40[^\n]", address->street);
 	printf("Do you want to enter an apartment number? (y or n): ");
 	clearKeyboard();
@@ -57,7 +56,6 @@ void getAddress(struct Address * address)
 		address->apartmentNumber = getInt();
 	}
 	printf("Please enter the contact's postal code: ");
-	clearKeyboard();
 	scanf("%7[^\n]", address->postalCode);
 	printf("Please enter the contact's city: ");
 	clearKeyboard();

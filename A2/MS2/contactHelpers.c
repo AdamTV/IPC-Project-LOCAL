@@ -22,7 +22,7 @@ Milestone:  2
 // clearKeyboard:
 void clearKeyboard(void)
 {
-	while (getchar() != '\n'); // empty execution code block on purpose
+	while (getchar() != '\n')	; // empty execution code block on purpose
 }
 
 // pause:

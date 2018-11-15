@@ -1,4 +1,2 @@
 ﻿  contacts.c
-c:\users\adams\source\repos\github\ipc-project-local\a2\ms2\contacts.c(36): warning C4474: 'scanf' : too many arguments passed for format string
-  c:\users\adams\source\repos\github\ipc-project-local\a2\ms2\contacts.c(36): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
   A2MS2.vcxproj -> C:\Users\adams\source\repos\GitHub\IPC-Project-LOCAL\A2\MS2\Debug\A2MS2.exe
