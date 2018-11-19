@@ -1,13 +1,13 @@
-Script started on Sun 18 Nov 2018 10:42:57 PM EST
-[?1034h~/ip/A2/MS2: ms2
+Script started on Mon 19 Nov 2018 12:06:03 AM EST
+[?1034h~/ip/A2/MS2: ms2
 
 ------------------------------------------
 Testing: Yes()
 ------------------------------------------
 Please enter 'Y' > Y
     Result: 1
-Please enter 'y' > ^C^C
+Please enter 'y' > ^C
 ~/ip/A2/MS2: exit
 exit
 
-Script done on Sun 18 Nov 2018 10:43:07 PM EST
+Script done on Mon 19 Nov 2018 12:06:12 AM EST
