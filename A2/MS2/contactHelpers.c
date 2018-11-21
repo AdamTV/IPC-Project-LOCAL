@@ -22,7 +22,7 @@ Milestone:  2
 // clearKeyboard:
 void clearKeyboard(void)
 {
-	while (getchar() != '\n')	; // empty execution code block on purpose
+	while (getchar() != '\n'); // empty execution code block on purpose
 }
 
 // pause:
@@ -43,8 +43,8 @@ int getInt(void)
 		scanf("%d%c", &Value, &NL);
 		if (NL != '\n')
 		{
-			clearKeyboard();
 			printf("*** INVALID INTEGER *** <Please enter an integer>: ");
+			clearKeyboard();
 		}
 	}
 	return Value;
@@ -69,7 +69,7 @@ int yes(void)
 {
 	char Value = 0;
 	char NL = 'x';
-	
+
 	do
 	{
 		scanf("%c%c", &Value, &NL);
@@ -109,26 +109,43 @@ int menu(void)
 // contactManagerSystem:
 void contactManagerSystem(void)
 {
-	int Value, Return;
+	int Menu = 0, Return = 0;
 	do
 	{
-		Value = menu();
+		Menu = menu();
 
-		switch (Value)
-		{
+		switch (Menu) {
 		case 1:
-			printf("<<< Feature 1 is unavailable >>>\n\n");
+			printf("\n<<< Feature 1 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
 		case 2:
-			printf("<<< Feature 2 is unavailable >>>\n\n");
+			printf("\n<<< Feature 2 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
 		case 3:
-			printf("<<< Feature 3 is unavailable >>>\n\n");
+			printf("\n<<< Feature 3 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
 		case 4:
-			printf("<<< Feature 4 is unavailable >>>\n\n");
+			printf("\n<<< Feature 4 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
 		case 5:
-			printf("<<< Feature 5 is unavailable >>>\n\n");
+			printf("\n<<< Feature 5 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
 		case 6:
-			printf("<<< Feature 6 is unavailable >>>\n\n");
-		case 0:
+			printf("\n<<< Feature 6 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
+		default:
 			printf("Exit the program? (Y)es/(N)o: ");
 			Return = yes();
 			if (Return == 1)

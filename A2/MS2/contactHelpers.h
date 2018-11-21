@@ -9,7 +9,7 @@ Assignment: 2
 Milestone:  2
 ----------------------------------------------
 Description: This header file modularizes general helper functions to
-             help reduce redundant coding for common repetitive tasks. 
+			 help reduce redundant coding for common repetitive tasks.
 ---------------------------------------------------------------------*/
 
 // HINT: 
