@@ -1,4 +1,4 @@
-Script started on Thu 15 Nov 2018 04:50:47 PM EST
+Script started on Tue 20 Nov 2018 08:09:42 PM EST
 [?1034h~/ip/A2/MS2: ms2
 
 ------------------------------------------
@@ -8,76 +8,8 @@ Please enter 'Y' > Y
     Result: 1
 Please enter 'y' > y
     Result: 1
-Please enter 'N' > N
-    Result: 0
-Please enter 'yes', then 'no', then 'n' > yes
-*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: no
-*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: n
-    Result: 0
-
-------------------------------------------
-Testing: pause()
-------------------------------------------
-(Press Enter to continue)
-
-------------------------------------------
-Testing: getInt()
-------------------------------------------
-Enter 'ipc', then '144' > ipc
-*** INVALID INTEGER *** <Please enter an integer>: 144
-    Integer entered: 144
-
-------------------------------------------
-Testing: getIntInRange(int,int)
-------------------------------------------
-Enter 'seneca', then '99', then '501', then '250' > 99
-*** OUT OF RANGE *** <Enter a number between 100 and 500>: 501
-*** OUT OF RANGE *** <Enter a number between 100 and 500>: 250
-    Integer entered: 250
-
-Enter '100' > 100
-    Integer entered: 100
-Enter '500' > 500
-    Integer entered: 500
-
-------------------------------------------
-Testing: getContact(struct Contact *)
-------------------------------------------
-Please enter the contact's first name: Tom See John
-Do you want to enter a middle initial(s)? (y or n): yes
-*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: y
-Please enter the contact's middle initial(s): How Wong R. U.
-Please enter the contact's last name: Song Sing
-Please enter the contact's street number: one two
-*** INVALID INTEGER *** <Please enter an integer>: -99
-
--99
-99
-*** INVALID STREET NUMBER *** <must be a positive number>: Please enter the contact's street name: 99
-Do you want to enter an apartment number? (y or n): y
-Please enter the contact's apartment number: -123
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-^C
+Please enter 'N' > ^C
 ~/ip/A2/MS2: exit
 exit
 
-Script done on Thu 15 Nov 2018 04:52:37 PM EST
+Script done on Tue 20 Nov 2018 08:09:51 PM EST

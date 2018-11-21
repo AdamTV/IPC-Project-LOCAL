@@ -16,9 +16,9 @@ Milestone:  2
 // Structure type Name declaration
 struct Name
 {
-    char firstName[31];
-    char middleInitial[15];
-    char lastName[36];
+	char firstName[31];
+	char middleInitial[15];
+	char lastName[36];
 };
 
 // Structure type Address declaration
@@ -45,7 +45,7 @@ struct Numbers
 // Structure type Contact declaration
 // NOTE:  Make sure the structure name does not have an 's' on the end!
 // Place your code here...
-struct Contact{
+struct Contact {
 	struct Name name;
 	struct Address address;
 	struct Numbers numbers;
