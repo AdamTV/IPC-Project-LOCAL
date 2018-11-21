@@ -1,4 +1,4 @@
-Script started on Mon 19 Nov 2018 12:06:03 AM EST
+Script started on Mon 19 Nov 2018 09:01:11 PM EST
 [?1034h~/ip/A2/MS2: ms2
 
 ------------------------------------------
@@ -10,4 +10,4 @@ Please enter 'y' > ^C
 ~/ip/A2/MS2: exit
 exit
 
-Script done on Mon 19 Nov 2018 12:06:12 AM EST
+Script done on Mon 19 Nov 2018 09:01:17 PM EST
