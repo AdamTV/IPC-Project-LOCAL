@@ -28,7 +28,7 @@ void clearKeyboard(void)
 // pause:
 void pause(void)
 {
-	printf("(Press Enter to continue)");
+	printf("(Press Enter to Continue)");
 	clearKeyboard();
 }
 
@@ -146,8 +146,9 @@ void contactManagerSystem(void)
 			printf("\n");
 			break;
 		default:
-			printf("Exit the program? (Y)es/(N)o: ");
+			printf("\nExit the program? (Y)es/(N)o: ");
 			Return = yes();
+			printf("\n");
 			if (Return == 1)
 				printf("Contact Management System: terminated\n");
 		}

@@ -1,10 +1,10 @@
 
-In line number 3 of your output:
+In line number 56 of your output:
 The output should be:
-------------------------------------------
+Do you want to enter an apartment number? (y or n): y
 But your output is: 
-
-^
-|
-Professor's character ASCII code: hex(2d), dec(45)
-un-matched character ASCII code: hex(d), dec(13)
+Do you want to enter an apartment number? (y or n): -1920
+                                                    ^
+----------------------------------------------------|
+Professor's character ASCII code: hex(79), dec(121)
+un-matched character ASCII code: hex(2d), dec(45)
