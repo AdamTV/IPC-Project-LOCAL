@@ -1,9 +1,9 @@
 /* -------------------------------------------
-Name:
-Student number:
-Email:
-Section:
-Date:
+Name:			 ADAM STINZIANI
+Student number:  124521188
+Email:			 astinziani@myseneca.ca
+Section:		 IPC144SVV
+Date:			 2018-11-21
 ----------------------------------------------
 Assignment: 2
 Milestone:  3
@@ -13,34 +13,98 @@ Milestone:  3
 
 #include <stdio.h>
 
-// +-------------------------------------------------+
-// | NOTE:  Include additional header files...       |
-// +-------------------------------------------------+
+#include "contacts.h"
 
+#include "contactHelpers.h"
 
-
-
-// +---------------------------------------------------+
-// | NOTE:  Copy/Paste your Assignment-2 Milestone-2   |
-// |        function definitions below...              |
-// |                                                   |
-// | *** See hint regarding the getNumbers function    |
-// +---------------------------------------------------+
-
+char reply;
+int Return;
 
 // getName:
+void getName(struct Name * name)
+{
+	printf("Please enter the contact's first name: ");
+	scanf("%30[^\n]", name->firstName);
+	clearKeyboard();
+	printf("Do you want to enter a middle initial(s)? (y or n): ");
+	Return = yes();
 
-
+	if (Return == 1)
+	{
+		printf("Please enter the contact's middle initial(s): ");
+		scanf("%6[^\n]", name->middleInitial);
+	}
+	clearKeyboard();
+	printf("Please enter the contact's last name: ");
+	scanf("%35[^\n]", name->lastName);
+}
 
 // getAddress:
-
-
+void getAddress(struct Address * address)
+{
+	printf("Please enter the contact's street number: ");
+	clearKeyboard();
+	while ((address->streetNumber = getInt()) < 0)
+	{
+		printf("*** INVALID STREET NUMBER *** <must be a positive number>: ");
+	}
+	printf("Please enter the contact's street name: ");
+	scanf("%40[^\n]", address->street);
+	printf("Do you want to enter an apartment number? (y or n): ");
+	clearKeyboard();
+	Return = yes();
+	if (Return == 1)
+	{
+		printf("Please enter the contact's apartment number: ");
+		while ((address->apartmentNumber = getInt()) < 0)
+		{
+			printf("*** INVALID APARTMENT NUMBER *** <must be a positive number>: ");
+		}
+	}
+	printf("Please enter the contact's postal code: ");
+	scanf("%7[^\n]", address->postalCode);
+	printf("Please enter the contact's city: ");
+	clearKeyboard();
+	scanf("%40[^\n]", address->city);
+}
 
 // getNumbers:
-// HINT:  Update this function to use the new helper 
-//        function "getTenDigitPhone" where applicable
+void getNumbers(struct Numbers * numbers)
+{
+	printf("Please enter the contact's cell phone number: ");
+	getTenDigitPhone(numbers->cell);
+	printf("Do you want to enter a home phone number? (y or n): ");
+	clearKeyboard();
+	Return = yes();
+	if (Return == 1)
+	{
+		printf("Please enter the contact's home phone number: ");
+		getTenDigitPhone(numbers->home);
+	}
+	printf("Do you want to enter a business phone number? (y or n): ");
+	Return = yes();
+	if (Return == 1)
+	{
+		printf("Please enter the contact's business phone number: ");
+		getTenDigitPhone(numbers->business);
+	}
+}
 
+// +-------------------------------------------+
+// | ====== Assignment 2 | Milestone 1 ======= |
+// +-------------------------------------------+
 
-
-// getContact
-
+// getContact:
+// Define Empty function definition below:
+void getContact(struct Contact * contact)
+{
+	getName(&(*contact).name);
+	getAddress(&contact->address);
+	getNumbers(&contact->numbers);
+}
+int main()
+{
+	char telNum[] = { 0 };
+	getTenDigitPhone(telNum);
+	return 0;
+}

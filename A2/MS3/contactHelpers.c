@@ -1,9 +1,9 @@
 /* -------------------------------------------
-Name:           
-Student number: 
-Email:          
-Section:        
-Date:           
+Name:			 ADAM STINZIANI
+Student number:  124521188
+Email:			 astinziani@myseneca.ca
+Section:		 IPC144SVV
+Date:			 2018-11-21
 ----------------------------------------------
 Assignment: 2
 Milestone:  3
@@ -16,42 +16,173 @@ Milestone:  3
 // This source file needs to "know about" the SYSTEM string library functions.
 // HINT: The library name is string.h.
 //       #include the string.h header file on the next line:
-
-
+#include <string.h>
 
 // ----------------------------------------------------------
 // Include your contactHelpers header file on the next line:
-
+#include "contactHelpers.h"
 
 
 //------------------------------------------------------
 // Function Definitions
 //------------------------------------------------------
-
+/*void getTenDigitPhone(char telNum[])
+{
+	int length, i, count = 0;
+	do
+	{		
+		scanf("%s", telNum);
+		length = strlen(telNum);
+		if (length != 10)
+			printf("Enter a 10-digit phone number: ");
+		for (i = 0; i < length && count == 0; i++)
+			if (telNum[i] < 0 || telNum[i] > 9)
+			{
+				printf("Enter a 10-digit phone number: ");
+				count++;
+			}
+	} while (length != 10 && count == 0);
+} */
 // +-------------------------------------------------+
 // | NOTE:  Copy/Paste your Assignment-2 Milestone-2 |
 // |        function definitions below...            |
 // +-------------------------------------------------+
 
 // clearKeyboard:
-
+void clearKeyboard(void)
+{
+	while (getchar() != '\n'); // empty execution code block on purpose
+}
 
 // pause:
-
+void pause(void)
+{
+	printf("(Press Enter to Continue)");
+	clearKeyboard();
+}
 
 // getInt:
+int getInt(void)
+{
+	char NL = 'x';
+	int Value;
 
+	while (NL != '\n')
+	{
+		scanf("%d%c", &Value, &NL);
+		if (NL != '\n')
+		{
+			printf("*** INVALID INTEGER *** <Please enter an integer>: ");
+			clearKeyboard();
+		}
+	}
+	return Value;
+}
 
 // getIntInRange:
+int getIntInRange(int min, int max)
+{
+	int Value;
+	Value = getInt();
 
+	while (Value < min || Value > max)
+	{
+		printf("*** OUT OF RANGE *** <Enter a number between %d and %d>: ", min, max);
+		Value = getInt();
+	}
+	return Value;
+}
 
 // yes:
+int yes(void)
+{
+	char Value = 0;
+	char NL = 'x';
 
+	do
+	{
+		scanf("%c%c", &Value, &NL);
+		if ((Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n') || NL != 10)
+		{
+			clearKeyboard();
+			printf("*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: ");
+		}
+	} while ((Value != 'Y' && Value != 'y' && Value != 'N' && Value != 'n') || NL != 10);
+	if (Value == 'Y' || Value == 'y')
+		return 1;
+	else
+		return 0;
+}
 
 // menu:
+int menu(void)
+{
+	int Value;
 
+	printf("Contact Management System\n");
+	printf("-------------------------\n");
+	printf("1. Display contacts\n");
+	printf("2. Add a contact\n");
+	printf("3. Update a contact\n");
+	printf("4. Delete a contact\n");
+	printf("5. Search contacts by cell phone number\n");
+	printf("6. Sort contacts by cell phone number\n");
+	printf("0. Exit\n\n");
+	printf("Select an option:> ");
+
+	Value = getIntInRange(0, 6);
+
+	return Value;
+}
 
 // contactManagerSystem:
+void contactManagerSystem(void)
+{
+	int Menu = 0, Return = 0;
+	do
+	{
+		Menu = menu();
+
+		switch (Menu) {
+		case 1:
+			printf("\n<<< Feature 1 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
+		case 2:
+			printf("\n<<< Feature 2 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
+		case 3:
+			printf("\n<<< Feature 3 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
+		case 4:
+			printf("\n<<< Feature 4 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
+		case 5:
+			printf("\n<<< Feature 5 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
+		case 6:
+			printf("\n<<< Feature 6 is unavailable >>>\n\n");
+			pause();
+			printf("\n");
+			break;
+		default:
+			printf("\nExit the program? (Y)es/(N)o: ");
+			Return = yes();
+			printf("\n");
+			if (Return == 1)
+				printf("Contact Management System: terminated\n");
+		}
+	} while (Return != 1);
+}
 
 
 // +-------------------------------------------------+
@@ -66,22 +197,29 @@ Milestone:  3
 // ---------------------------------------------------------------------------------
 void getTenDigitPhone(char telNum[])
 {
-    int needInput = 1;
-
-    while (needInput == 1) {
-        scanf("%10s", telNum);
-        clearKeyboard();
-
-        // (String Length Function: validate entry of 10 characters)
-        if (strlen(telNum) == 10)
-            needInput = 0;
-        else
-            printf("Enter a 10-digit phone number: ");
-    }
+	int i, needInput = 1, count = 0;
+	int length;
+	while (needInput == 1) 
+	{
+		scanf("%10s", telNum);
+		clearKeyboard();
+		length = strlen(telNum);
+		count = 0;
+			// (String Length Function: validate entry of 10 characters)
+		for (i = 0; i < length && count == 0; i++)
+		{
+			if (telNum[i] < '0' || telNum[i] > '9')
+				count++;
+		}
+		if (strlen(telNum) == 10 && count == 0)
+			needInput = 0;
+		else
+			printf("Enter a 10-digit phone number: ");		
+	}
 }
 
 // findContactIndex:
-int findContactIndex(const struct Contact contacts[], int size, const char cellNum[])
+	int findContactIndex(const struct Contact contacts[], int size, const char cellNum[])
 {
     return -1;
 }
@@ -89,43 +227,63 @@ int findContactIndex(const struct Contact contacts[], int size, const char cellN
 
 // displayContactHeader
 // Put empty function definition below:
+void displayContactHeader(void)
+{
 
-
+}
 
 // displayContactFooter
 // Put empty function definition below:
+void displayContactFooter(int contact)
+{
 
-
+}
 
 // displayContact:
 // Put empty function definition below:
+void displayContact(const struct Contact* contact)
+{
 
-
+}
 
 // displayContacts:
 // Put empty function definition below:
+void displayContacts(const struct Contact contact[], int i)
+{
 
-
+}
 
 // searchContacts:
 // Put empty function definition below:
+void searchContacts(const struct Contact contact[], int i)
+{
 
-
+}
 
 // addContact:
 // Put empty function definition below:
+void addContact(struct Contact contact[], int i)
+{
 
-
+}
 
 // updateContact:
 // Put empty function definition below:
+void updateContact(struct Contact contact[], int i)
+{
 
-
+}
 
 // deleteContact:
 // Put empty function definition below:
+void deleteContact(struct Contact contact[], int i)
+{
 
-
+}
 
 // sortContacts:
 // Put empty function definition below:
+void sortContacts(struct Contact contact[], int i)
+{
+
+}
