@@ -13,45 +13,14 @@ Milestone:  3
 
 #include <stdio.h>
 
-// This source file needs to "know about" the SYSTEM string library functions.
-// HINT: The library name is string.h.
-//       #include the string.h header file on the next line:
 #include <string.h>
 
-// ----------------------------------------------------------
-// Include your contactHelpers header file on the next line:
 #include "contactHelpers.h"
-
-
-//------------------------------------------------------
-// Function Definitions
-//------------------------------------------------------
-/*void getTenDigitPhone(char telNum[])
-{
-	int length, i, count = 0;
-	do
-	{		
-		scanf("%s", telNum);
-		length = strlen(telNum);
-		if (length != 10)
-			printf("Enter a 10-digit phone number: ");
-		for (i = 0; i < length && count == 0; i++)
-			if (telNum[i] < 0 || telNum[i] > 9)
-			{
-				printf("Enter a 10-digit phone number: ");
-				count++;
-			}
-	} while (length != 10 && count == 0);
-} */
-// +-------------------------------------------------+
-// | NOTE:  Copy/Paste your Assignment-2 Milestone-2 |
-// |        function definitions below...            |
-// +-------------------------------------------------+
 
 // clearKeyboard:
 void clearKeyboard(void)
 {
-	while (getchar() != '\n'); // empty execution code block on purpose
+	while (getchar() != '\n')	; // empty execution code block on purpose
 }
 
 // pause:
@@ -184,7 +153,6 @@ void contactManagerSystem(void)
 	} while (Return != 1);
 }
 
-
 // +-------------------------------------------------+
 // | ====== Assignment 2 | Milestone 3 =======       |
 // +-------------------------------------------------+
@@ -192,38 +160,32 @@ void contactManagerSystem(void)
 // +-------------------------------------------------+
 
 // Generic function to get a ten-digit phone number (ensures 10-digit chars entered)
-// ---------------------------------------------------------------------------------
-// NOTE: Modify this function to validate only numeric character digits are entered
-// ---------------------------------------------------------------------------------
 void getTenDigitPhone(char telNum[])
 {
-	int i, needInput = 1, count = 0;
-	int length;
-	while (needInput == 1) 
+	int i, needInput = 1, count, length;
+	while (needInput == 1)
 	{
-		scanf("%10s", telNum);
+		scanf("%s", telNum);
 		clearKeyboard();
 		length = strlen(telNum);
-		count = 0;
-			// (String Length Function: validate entry of 10 characters)
+ 		count = 0;
 		for (i = 0; i < length && count == 0; i++)
 		{
 			if (telNum[i] < '0' || telNum[i] > '9')
 				count++;
 		}
-		if (strlen(telNum) == 10 && count == 0)
+		if (length == 10 && count == 0)
 			needInput = 0;
 		else
-			printf("Enter a 10-digit phone number: ");		
+			printf("Enter a 10-digit phone number: ");
 	}
 }
 
 // findContactIndex:
-	int findContactIndex(const struct Contact contacts[], int size, const char cellNum[])
+int findContactIndex(const struct Contact contacts[], int size, const char cellNum[])
 {
-    return -1;
+	return -1;
 }
-
 
 // displayContactHeader
 // Put empty function definition below:
@@ -234,7 +196,7 @@ void displayContactHeader(void)
 
 // displayContactFooter
 // Put empty function definition below:
-void displayContactFooter(int contact)
+void displayContactFooter(int contacts)
 {
 
 }
@@ -248,42 +210,42 @@ void displayContact(const struct Contact* contact)
 
 // displayContacts:
 // Put empty function definition below:
-void displayContacts(const struct Contact contact[], int i)
+void displayContacts(const struct Contact contact[], int size)
 {
 
 }
 
 // searchContacts:
 // Put empty function definition below:
-void searchContacts(const struct Contact contact[], int i)
+void searchContacts(const struct Contact contact[], int size)
 {
 
 }
 
 // addContact:
 // Put empty function definition below:
-void addContact(struct Contact contact[], int i)
+void addContact(struct Contact contact[], int size)
 {
 
 }
 
 // updateContact:
 // Put empty function definition below:
-void updateContact(struct Contact contact[], int i)
+void updateContact(struct Contact contact[], int size)
 {
 
 }
 
 // deleteContact:
 // Put empty function definition below:
-void deleteContact(struct Contact contact[], int i)
+void deleteContact(struct Contact contact[], int size)
 {
 
 }
 
 // sortContacts:
 // Put empty function definition below:
-void sortContacts(struct Contact contact[], int i)
+void sortContacts(struct Contact contact[], int size)
 {
 
 }

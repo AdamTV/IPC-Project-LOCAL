@@ -20,15 +20,9 @@ Assignment: 2
 Milestone:  3
 ---------------------------------------------- */
 
-
 //------------------------------------------------------
 // Structure Types
 //------------------------------------------------------
-
-// +-------------------------------------------------+
-// | NOTE:  Copy/Paste your Assignment-2 Milestone-1 |
-// |        structures here...                       |
-// +-------------------------------------------------+
 
 // Structure type Name declaration
 struct Name
@@ -39,7 +33,6 @@ struct Name
 };
 
 // Structure type Address declaration
-// Place your code here...
 struct Address
 {
 	int streetNumber;
@@ -50,7 +43,6 @@ struct Address
 };
 
 // Structure type Numbers declaration
-// Place your code here...
 struct Numbers
 {
 	char cell[11];
@@ -59,9 +51,8 @@ struct Numbers
 };
 
 // Structure type Contact declaration
-// NOTE:  Make sure the structure name does not have an 's' on the end!
-// Place your code here...
-struct Contact {
+struct Contact
+{
 	struct Name name;
 	struct Address address;
 	struct Numbers numbers;
@@ -71,27 +62,17 @@ struct Contact {
 // Function Prototypes
 //------------------------------------------------------
 
-// +-------------------------------------------------+
-// | NOTE:  Copy/Paste your Assignment-1 Milestone-4 |
-// |        function prototypes here...              |
-// +-------------------------------------------------+
-
 // Get and store from standard input the values for Name
-// Place your code here...
 void getName(struct Name *);
 
 // Get and store from standard input the values for Address
-// Place your code here...
 void getAddress(struct Address *);
 
 // Get and store from standard input the values for Numbers
-// Place your code here...
 void getNumbers(struct Numbers *);
 
 // Get and store from standard input the values for a Contact (NOT: Contacts)
-// Put function prototype below:
 void getContact(struct Contact *);
-
 
 // ----------------------------------------------------------------------------
 // DO NOT remove the below line (closing of the "safeguard" condition)

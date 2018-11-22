@@ -90,21 +90,10 @@ void getNumbers(struct Numbers * numbers)
 	}
 }
 
-// +-------------------------------------------+
-// | ====== Assignment 2 | Milestone 1 ======= |
-// +-------------------------------------------+
-
 // getContact:
-// Define Empty function definition below:
 void getContact(struct Contact * contact)
 {
 	getName(&(*contact).name);
 	getAddress(&contact->address);
 	getNumbers(&contact->numbers);
-}
-int main()
-{
-	char telNum[] = { 0 };
-	getTenDigitPhone(telNum);
-	return 0;
 }
