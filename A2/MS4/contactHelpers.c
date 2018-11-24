@@ -338,7 +338,6 @@ void updateContact(struct Contact contact[], int size)
 			contact[Return].address.streetNumber = 0;
 			getAddress(&contact[Return].address);
 		}
-		clearKeyboard();
 		printf("Do you want to update the numbers? (y or n): ");
 		Yes = yes();
 		if (Yes == 1)
