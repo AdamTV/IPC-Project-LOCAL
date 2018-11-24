@@ -1,4 +1,4 @@
-Script started on Sat 24 Nov 2018 03:18:41 PM EST
+Script started on Sat 24 Nov 2018 03:25:18 PM EST
 [?1034h~/ip/A2/MS4: ms4
 
 ------------------------------------------
@@ -154,14 +154,27 @@ Select an option:> 3
 
 Enter the cell number for the contact: 9051112222
 
-Contact found
-
+Contact found:
 Maggie R. Greene
     C: 9051112222   H: 9052223333   B: 9053334444
        55 Hightop House, Bolton, A9A 3K3
 
-Do you want to update the name? (y or n): ^C
-~/ip/A2/MS4: exit
+Do you want to update the name? (y or n): y
+Please enter the contact's first name: Maggie
+Do you want to enter a middle initial(s)? (y or n): y
+Please enter the contact's middle initial(s): R.
+Please enter the contact's last name: Greene Grimes
+Do you want to update the address? (y or n): y
+Please enter the contact's street number: 55
+Please enter the contact's street name: Hightop House
+Do you want to enter an apartment number? (y or n): y
+Please enter the contact's apartment number: 222
+Please enter the contact's postal code: A9A 3K3
+Please enter the contact's city: Bolton
+Do you want to update the numbers? (y or n): 9051112222
+*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: *** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: *** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: *** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: *** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: 
+*** INVALID ENTRY *** <Only (Y)es or (N)o are acceptable>: ^C
+~/ip/A2/MS4: exit
 exit
 
-Script done on Sat 24 Nov 2018 03:24:11 PM EST
+Script done on Sat 24 Nov 2018 03:30:15 PM EST
