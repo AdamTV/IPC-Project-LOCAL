@@ -45,7 +45,6 @@ void getAddress(struct Address * address)
 	printf("Please enter the contact's street number: ");
 	while ((address->streetNumber = getInt()) < 0)
 	{
-		clearKeyboard();
 		printf("Please enter the contact's street number: ");
 	}
 	printf("Please enter the contact's street name: ");
