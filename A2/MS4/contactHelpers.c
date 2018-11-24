@@ -272,7 +272,6 @@ void displayContacts(const struct Contact contact[], int size)
 }
 
 // searchContacts:
-// Put empty function definition below:
 void searchContacts(const struct Contact contact[], int size)
 {
 	int Return;
@@ -283,12 +282,12 @@ void searchContacts(const struct Contact contact[], int size)
 	Return = findContactIndex(contact, size, search);
 	if (Return != -1)
 	{
-		displayContact(contact);
+		displayContact(&contact[Return]);
 		printf("\n");
 	}
 	else 
 	{
-		printf("*** Contact NOT FOUND ***\n");
+		printf("*** Contact NOT FOUND ***\n\n");
 	}
 }
 
@@ -303,11 +302,11 @@ void addContact(struct Contact contact[], int size)
 		{
 			getContact(&contact[i]);
 			done = 1;
-			printf("--- New contact added! ---\n");
+			printf("--- New contact added! ---\n\n");
 		}
 	}
 	if (done == 0)
-	printf("*** ERROR: The contact list is full! ***\n");
+	printf("*** ERROR: The contact list is full! ***\n\n");
 }
 
 // updateContact:
@@ -322,29 +321,47 @@ void updateContact(struct Contact contact[], int size)
 	Return = findContactIndex(contact, size, num);
 	if (Return == -1)
 	{
-		printf("*** Contact NOT FOUND ***\n");
+		printf("*** Contact NOT FOUND ***\n\n");
 	}
 	else
 	{
-		printf("\nContact found\n");
-		printf("Do you want to update the name? (y or n): ");
+		printf("\nContact found\n\n");
+		displayContact(&contact[Return]);
+		printf("\nDo you want to update the name? (y or n): ");
 		Yes = yes();
 		if (Yes == 1)
+		{
+			*contact[Return].name.firstName = '\0';
+			*contact[Return].name.middleInitial = '\0';
+			*contact[Return].name.lastName = '\0';
 			getName(&contact[Return].name);
+		}
 		printf("Do you want to update the address? (y or n): ");
 		Yes = yes();
 		if (Yes == 1)
+		{
+			contact[Return].address.apartmentNumber = 0;
+			*contact[Return].address.city = '\0';
+			*contact[Return].address.postalCode = '\0';
+			*contact[Return].address.street = '\0';
+			contact[Return].address.streetNumber = 0;
 			getAddress(&contact[Return].address);
+		}
+		clearKeyboard();
 		printf("Do you want to update the numbers? (y or n): ");
 		Yes = yes();
 		if (Yes == 1)
+		{
+			*contact[Return].numbers.cell = '\0';
+			*contact[Return].numbers.business = '\0';
+			*contact[Return].numbers.home = '\0';
 			getNumbers(&contact[Return].numbers);
-		printf("--- Contact Updated! ---");
+		}
+		printf("--- Contact Updated! ---\n\n");
 	}
 }
 
 // deleteContact:
-// Put empty function definition below:
 void deleteContact(struct Contact contact[], int size)
 {
 	int Return, Yes;
@@ -365,28 +382,33 @@ void deleteContact(struct Contact contact[], int size)
 		printf("CONFIRM: Delete this contact ? (y or n) : ");
 		Yes = yes();
 		if (Yes == 1)
+		{
 			*contact[Return].numbers.cell = '\0';
-		printf("--- Contacts deleted! ---\n");
+			printf("--- Contacts deleted! ---\n\n");
+		}
 	}
 }
 
 // sortContacts:
-// Put empty function definition below:
 void sortContacts(struct Contact contact[], int size)
 {
 	int i, j, m;
-	int temp;
+	struct Contact temp;
 
 	for (i = 0; i < size; i++)
 	{
 		m = i;
 		for (j = i + 1; j < size; j++)
-			if (contact->numbers.cell[j] < contact->numbers.cell[m])
+			if (contact[j].numbers.cell[m] < contact[m].numbers.cell[m])
 			{
-				temp = contact->numbers.cell[i];
-				contact->numbers.cell[i] = contact->numbers.cell[m];
-				contact->numbers.cell[m] = temp;
+				m = j;
 			}
+		if (m != i)
+		{
+				temp = contact[i];
+				contact[i] = contact[m];
+				contact[m] = temp;
+		}
 	}
-	printf("---Contacts sorted! ---\n");
+	printf("---Contacts sorted! ---\n\n");
 }
