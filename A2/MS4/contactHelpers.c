@@ -316,7 +316,7 @@ void updateContact(struct Contact contact[], int size)
 	}
 	else
 	{
-		printf("\nContact found\n\n");
+		printf("\nContact found:\n");
 		displayContact(&contact[Return]);
 		printf("\nDo you want to update the name? (y or n): ");
 		Yes = yes();
@@ -367,7 +367,7 @@ void deleteContact(struct Contact contact[], int size)
 	}
 	else
 	{
-		printf("\nContact found\n");
+		printf("\nContact found:\n");
 		displayContact(&contact[Return]);
 		printf("\n");
 		printf("CONFIRM: Delete this contact ? (y or n) : ");
