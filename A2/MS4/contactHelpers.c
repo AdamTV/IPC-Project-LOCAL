@@ -213,7 +213,7 @@ int findContactIndex(const struct Contact contacts[], int size, const char cellN
 {
 	int i, Return;
 
-	for (i = 0; i < size - 1; i++)
+	for (i = 0; i < size; i++)
 	{
 		Return = strcmp(contacts[i].numbers.cell, cellNum);
 		if (Return == 0)
