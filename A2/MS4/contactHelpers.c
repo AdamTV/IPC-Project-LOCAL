@@ -373,6 +373,16 @@ void deleteContact(struct Contact contact[], int size)
 		Yes = yes();
 		if (Yes == 1)
 		{
+			*contact[Return].name.firstName = '\0';
+			*contact[Return].name.middleInitial = '\0';
+			*contact[Return].name.lastName = '\0';
+			contact[Return].address.streetNumber = '\0';
+			*contact[Return].address.street = '\0';
+			*contact[Return].address.postalCode = '\0';
+			*contact[Return].address.city = '\0';	
+			contact[Return].address.apartmentNumber = '\0';
+			*contact[Return].numbers.business = '\0';
+			*contact[Return].numbers.home = '\0';
 			*contact[Return].numbers.cell = '\0';
 			printf("--- Contact deleted! ---\n\n");
 		} else

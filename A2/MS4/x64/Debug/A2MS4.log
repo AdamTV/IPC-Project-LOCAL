@@ -1,5 +1,7 @@
 ﻿  contactHelpers.c
-c:\users\adams\source\repos\github\ipc-project-local\a2\ms4\contacthelpers.c(197): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-c:\users\adams\source\repos\github\ipc-project-local\a2\ms4\contacthelpers.c(265): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-c:\users\adams\source\repos\github\ipc-project-local\a2\ms4\contacthelpers.c(300): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  A2MS4.vcxproj -> C:\Users\adams\source\repos\GitHub\IPC-Project-LOCAL\A2\MS4\x64\Debug\A2MS4.exe
+c:\users\adams\source\repos\github\ipc-project-local\a2\ms4\contacthelpers.c(192): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\adams\source\repos\github\ipc-project-local\a2\ms4\contacthelpers.c(257): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\adams\source\repos\github\ipc-project-local\a2\ms4\contacthelpers.c(292): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\adams\source\repos\github\ipc-project-local\a2\ms4\contacthelpers.c(295): error C2059: syntax error: '{'
+  contacts.c
+  Generating Code...
