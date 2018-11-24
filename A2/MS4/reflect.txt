@@ -1,0 +1,8 @@
+The two functions findContactIndex and getTenDigitPhone benefit my source code because they are
+useful funtions that are used repeatedly within the program, and defining them as funtions saves
+lines of code which improves readability. In respect to maintenance nothing needs to be changed to
+increase the amount of contacts findContactIndex searches except MAXCONTACTS.
+
+I learnt the most the specifications regarding assigning values to an array of structs in a funtion
+and using arrays of structs as arguments in calls to funtions. Also that one change to a function
+can make many changes to the program. Functions, Arrays and Structs...
