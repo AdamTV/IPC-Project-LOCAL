@@ -62,6 +62,7 @@ void getAddress(struct Address * address)
 	}
 	printf("Please enter the contact's postal code: ");
 	scanf("%7[^\n]", address->postalCode);
+	clearKeyboard();
 	printf("Please enter the contact's city: ");
 	scanf("%40[^\n]", address->city);
 	clearKeyboard();

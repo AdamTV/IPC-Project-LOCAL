@@ -369,12 +369,15 @@ void deleteContact(struct Contact contact[], int size)
 		printf("\nContact found:\n");
 		displayContact(&contact[Return]);
 		printf("\n");
-		printf("CONFIRM: Delete this contact ? (y or n) : ");
+		printf("CONFIRM: Delete this contact? (y or n): ");
 		Yes = yes();
 		if (Yes == 1)
 		{
 			*contact[Return].numbers.cell = '\0';
-			printf("--- Contacts deleted! ---\n\n");
+			printf("--- Contact deleted! ---\n\n");
+		} else
+		{
+			printf("\n");		
 		}
 	}
 }
