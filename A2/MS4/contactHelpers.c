@@ -179,12 +179,7 @@ void contactManagerSystem(void)
 	} while (Return != 1);
 }
 
-// +-------------------------------------------------+
-// | ====== Assignment 2 | Milestone 3 =======       |
-// +-------------------------------------------------+
-// | Put empty function definitions below...         |
-// +-------------------------------------------------+
-
+//A2MS3
 // Generic function to get a ten-digit phone number (ensures 10-digit chars entered)
 void getTenDigitPhone(char telNum[])
 {
@@ -223,7 +218,6 @@ int findContactIndex(const struct Contact contacts[], int size, const char cellN
 }
 
 // displayContactHeader
-// Put empty function definition below:
 void displayContactHeader(void)
 {
 	printf("+-----------------------------------------------------------------------------+\n");
@@ -232,7 +226,6 @@ void displayContactHeader(void)
 }
 
 // displayContactFooter
-// Put empty function definition below:
 void displayContactFooter(int contacts)
 {
 	printf("+-----------------------------------------------------------------------------+\n");
@@ -240,7 +233,6 @@ void displayContactFooter(int contacts)
 }
 
 // displayContact:
-// Put empty function definition below:
 void displayContact(const struct Contact* contact)
 {
 	printf("%s", contact->name.firstName);
@@ -310,7 +302,6 @@ void addContact(struct Contact contact[], int size)
 }
 
 // updateContact:
-// Put empty function definition below:
 void updateContact(struct Contact contact[], int size)
 {
 	int Return, Yes;
@@ -399,7 +390,7 @@ void sortContacts(struct Contact contact[], int size)
 	{
 		m = i;
 		for (j = i + 1; j < size; j++)
-			if (contact[j].numbers.cell[m] < contact[m].numbers.cell[m])
+			if ((strcmp(contact[j].numbers.cell, contact[m].numbers.cell)) < 0)
 			{
 				m = j;
 			}
