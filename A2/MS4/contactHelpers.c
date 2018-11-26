@@ -274,6 +274,7 @@ void searchContacts(const struct Contact contact[], int size)
 	Return = findContactIndex(contact, size, search);
 	if (Return != -1)
 	{
+		printf("\n");
 		displayContact(&contact[Return]);
 		printf("\n");
 	}
