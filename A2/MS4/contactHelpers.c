@@ -235,7 +235,7 @@ void displayContactFooter(int contacts)
 // displayContact:
 void displayContact(const struct Contact* contact)
 {
-	printf("%s", contact->name.firstName);
+	printf(" %s", contact->name.firstName);
 	if (contact->name.middleInitial[0] != '\0')
 		printf(" %s %s\n", contact->name.middleInitial, contact->name.lastName);
 	else printf(" %s\n", contact->name.lastName);
@@ -414,5 +414,5 @@ void sortContacts(struct Contact contact[], int size)
 				contact[m] = temp;
 		}
 	}
-	printf("---Contacts sorted! ---\n\n");
+	printf("--- Contacts sorted! ---\n\n");
 }

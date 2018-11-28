@@ -1,8 +1,53 @@
-Script started on Wed 28 Nov 2018 12:47:43 PM EST
-[?1034h~/ip/A2/MS4: ms4
+/*
++--------------------------------------------------------*
+|             2  0  1  8  ~  F  A  L  L
+|                 I  P  C  :  B  T  P
+|                 1  4  4  :  1  0  0
+|                 ASSIGNMENT #2 MS# 4
+|
+|   S  E  N  E  C  A               C  O  L  L  E  G  E
+|   ========  =======  =====  ========  ======  ======
+|      ==     ==      ==        ==     ==      ==   ==
+|     ==     ====     ====     ==     ====    ======
+|    ==     ==          ==    ==     ==      == ==
+|   ==     ======  =====     ==     ======  ==   ==
+|                                                         
+|  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+|  !!!   DO NOT ALTER THE CONTENTS OF THIS FILE   !!!
+|  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++--------------------------------------------------------*/
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include "contacts.h"
+#include "contactHelpers.h"
+
+void printSectionHeader(const char*);
+
+int main(void)
+{
+    printSectionHeader("Final A#2-Milestone #4");
+
+    contactManagerSystem();
+
+    return 0;
+}
+
+// Display specified test section header
+void printSectionHeader(const char* testName)
+{
+    printf("\n");
+    printf("------------------------------------------\n");
+    printf("Testing: %s\n", testName);
+    printf("------------------------------------------\n");
+}
+
+/*
+EXPECTED OUTPUT:
 
 ------------------------------------------
-Testing: Final A#2-Milestone #4 (Sort)
+Testing: Final A#2-Milestone #4
 ------------------------------------------
 Contact Management System
 -------------------------
@@ -466,57 +511,6 @@ Contact Management System
 6. Sort contacts by cell phone number
 0. Exit
 
-Select an option:> 6
-
---- Contacts sorted! ---
-
-(Press Enter to Continue)
-
-Contact Management System
--------------------------
-1. Display contacts
-2. Add a contact
-3. Update a contact
-4. Delete a contact
-5. Search contacts by cell phone number
-6. Sort contacts by cell phone number
-0. Exit
-
-Select an option:> 1
-
-+-----------------------------------------------------------------------------+
-|                              Contacts Listing                               |
-+-----------------------------------------------------------------------------+
- Rick Grimes
-    C: 1112223333   H:              B: 2223334444
-       77 Cityscape Rd., Apt# 1200, Somewhere City, Q8Q 3J3
- Morgan A. Jones
-    C: 7051112222   H: 7052223333   B: 7053334444
-       77 Cottage Lane, Peterborough, C7C 9Q9
- Maggie R. Greene Grimes
-    C: 9051112222   H:              B:           
-       55 Hightop House, Apt# 222, Bolton, A9A 3K3
- Sasha Williams
-    C: 9052223333   H: 9052223333   B: 9054445555
-       55 Hightop House, Bolton, A9A 3K3
- Daryl Dixon
-    C: 9993338888   H:              B:           
-       11 Forest Road, Bolton, Y2Y 2N2
-+-----------------------------------------------------------------------------+
-Total contacts: 5
-
-(Press Enter to Continue)
-
-Contact Management System
--------------------------
-1. Display contacts
-2. Add a contact
-3. Update a contact
-4. Delete a contact
-5. Search contacts by cell phone number
-6. Sort contacts by cell phone number
-0. Exit
-
 Select an option:> 0
 
 Exit the program? (Y)es/(N)o: n
@@ -536,7 +530,5 @@ Select an option:> 0
 Exit the program? (Y)es/(N)o: y
 
 Contact Management System: terminated
-~/ip/A2/MS4: exit
-exit
 
-Script done on Wed 28 Nov 2018 12:52:44 PM EST
+*/
