@@ -1,10 +1,10 @@
 
-In line number 2 of your output:
+In line number 17 of your output:
 The output should be:
-
+Select an option:> 7
 But your output is: 
-[?1034h~/ip/A2/MS4: ms4
-^
-|
-Professor's character ASCII code: hex(d), dec(13)
-un-matched character ASCII code: hex(1b), dec(27)
+Select an option:> 6
+                   ^
+-------------------|
+Professor's character ASCII code: hex(37), dec(55)
+un-matched character ASCII code: hex(36), dec(54)
