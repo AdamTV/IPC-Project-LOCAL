@@ -403,9 +403,7 @@ void sortContacts(struct Contact contact[], int size)
 		m = i;
 		for (j = i + 1; j < size; j++)
 			if ((strcmp(contact[j].numbers.cell, contact[m].numbers.cell)) < 0)
-			{
 				m = j;
-			}
 		if (m != i)
 		{
 				temp = contact[i];
